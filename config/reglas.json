@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "nota": "Valores iniciales. Fijarlos antes de la prueba técnica de 30 mensajes; cualquier cambio posterior se documenta como ajuste.",
+  "umbrales": {
+    "peligroso": 6,
+    "sospechoso": 3
+  },
+  "puntos": {
+    "urgencia": 2,
+    "pide_pago": 3,
+    "pide_datos": 3,
+    "premio_con_pago": 3,
+    "enlace_acortado": 2,
+    "dominio_imitacion": 2,
+    "dominio_desconocido": 1,
+    "llamado_clic_urgente": 1,
+    "seguimiento_no_guardado": 2,
+    "seguimiento_guardado": -1,
+    "seguimiento_confirmado_otro_medio": -2,
+    "seguimiento_esperado": -2,
+    "seguimiento_no_esperado": 2
+  },
+  "palabras": {
+    "urgencia": ["hoy", "ultimo aviso", "ultima oportunidad", "bloquead", "en 2 horas", "urgente", "inmediatamente", "de inmediato", "ahora mismo", "cancelad"],
+    "pide_pago": ["consign", "transfier", "transferencia", "deposit", "nequi", "daviplata", "pagar", "pago ", "cuenta bancaria", "impuesto"],
+    "premio": ["ganaste", "premio", "rifa", "sorteo"],
+    "pide_datos": ["clave", "contrasena", "codigo", "cedula", "numero de cuenta", "tarjeta", "otp", "token"],
+    "solicitud_dinero": ["necesito", "prestar", "prestame", "me puedes prestar", "dinero", "plata"],
+    "llamado_enlace": ["enlace", "link", "haz clic", "da clic", "ingresa a", "entra a", "toca el"],
+    "negacion_datos": ["no la compartas", "no lo compartas", "no compartas", "nunca compartas", "no comparta ", "no lo comparta ", "no la revele", "no lo revele"],
+    "verbos_entrega": ["escribe", "escribela", "escribelo", "escriba", "envia", "enviame", "enviala", "envialo", "envie", "manda", "mandame", "mandala", "mandalo", "responde con", "respondeme", "confirma tu", "confirme su", "digita", "digite", "ingresa tu", "ingrese su", "entrega", "reenvia", "reenviame", "pasame", "dame tu", "dime tu", "indica tu", "indique su", "proporcione", "facilite", "suministre", "repite el", "valida tu", "valide su", "verifica tu", "verifique su", "actualiza tus datos", "actualice sus datos"]
+  },
+  "acortadores": ["bit.ly", "tinyurl.com", "t.co", "goo.gl", "is.gd", "ow.ly", "cutt.ly", "rb.gy", "shorturl.at"],
+  "marcas": ["bancolombia", "davivienda", "nequi", "daviplata", "bbva", "rappi", "mercadolibre", "dian", "claro", "movistar", "tigo", "whatsapp", "unisabana"],
+  "dominiosOficiales": ["bancolombia.com", "davivienda.com", "nequi.com.co", "daviplata.com", "bbva.com.co", "rappi.com", "mercadolibre.com.co", "dian.gov.co", "claro.com.co", "movistar.com.co", "tigo.com.co", "whatsapp.com", "unisabana.edu.co"],
+  "preguntas": {
+    "numero_guardado": "¿Este mensaje viene del mismo número que tienes guardado para esa persona?",
+    "confirmo_otro_medio": "¿Ya confirmaste con esa persona por otro medio, por ejemplo una llamada a su número conocido?",
+    "esperado": "¿Esperabas este mensaje de esa persona o empresa?"
+  }
+}
