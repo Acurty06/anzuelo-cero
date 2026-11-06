@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anzuelo Cero</title>
+<meta name="description" content="Reflejo, pausa y plan contra el phishing: entrena antes, verifica durante y actúa después.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="#inicio" data-ir="inicio">
+      <span class="marca-icono" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.4 3.4 8.3 8 9 4.6-.7 8-4.6 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+      </span>
+      <span class="marca-texto">Anzuelo<b>Cero</b></span>
+    </a>
+    <nav class="nav" id="nav">
+      <button type="button" data-ir="inicio" class="activo">Inicio</button>
+      <button type="button" data-ir="prevencion">Prevención</button>
+      <button type="button" data-ir="deteccion">Detección</button>
+      <button type="button" data-ir="mitigacion">Mitigación</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= INICIO ================= -->
+<section class="vista activa" data-vista="inicio">
+  <div class="hero">
+    <div class="hero-txt">
+      <p class="kicker">Reflejo · Pausa · Plan</p>
+      <h1>Saber reconocer el phishing<br><span class="destacado">no basta.</span></h1>
+      <p class="lead">En nuestra encuesta a 70 estudiantes, quienes cayeron sacaron <b>4.28 de 5</b> en el quiz. Quienes no cayeron, <b>4.42</b>. El problema no es el conocimiento: es el momento de decidir, en segundos.</p>
+      <div class="hero-btns">
+        <button type="button" class="btn btn-acento" data-ir="deteccion">Verificar un mensaje</button>
+        <button type="button" class="btn btn-fantasma" data-ir="prevencion">Entrenar mi reflejo</button>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>46%</b><span>ha hecho clic en un enlace que resultó falso</span></div>
+      <div class="stat"><b>11%</b><span>compartió una clave, código o dato bancario</span></div>
+      <div class="stat"><b>80%</b><span>recibe mensajes sospechosos por SMS</span></div>
+      <p class="stat-nota">Encuesta propia a 70 estudiantes. Muestra de conveniencia, 18 a 20 años.</p>
+    </div>
+  </div>
+
+  <h2 class="titulo-seccion">Tres momentos, tres herramientas</h2>
+  <div class="grid-3">
+    <article class="pilar" data-ir="prevencion">
+      <span class="pilar-ico ico-prev" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      </span>
+      <p class="pilar-tag">Antes</p>
+      <h3>Prevención</h3>
+      <p>Un simulacro de 10 segundos que entrena la decisión bajo presión, no la teoría. Más la biblioteca de señales y tu palabra clave familiar.</p>
+      <span class="pilar-link">Entrenar →</span>
+    </article>
+    <article class="pilar" data-ir="deteccion">
+      <span class="pilar-ico ico-det" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </span>
+      <p class="pilar-tag">Durante</p>
+      <h3>Detección</h3>
+      <p>Pegas el mensaje o el enlace. La app pregunta lo que necesita saber y recién entonces da un veredicto, con las razones subrayadas.</p>
+      <span class="pilar-link">Verificar →</span>
+    </article>
+    <article class="pilar" data-ir="mitigacion">
+      <span class="pilar-ico ico-mit" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="m5.6 5.6 3.9 3.9M14.5 14.5l3.9 3.9M18.4 5.6l-3.9 3.9M9.5 14.5l-3.9 3.9"/></svg>
+      </span>
+      <p class="pilar-tag">Después</p>
+      <h3>Mitigación</h3>
+      <p>Ya caíste. Un plan de 5 minutos ordenado por urgencia según lo que alcanzaste a hacer, con cronómetro y el aviso listo para enviar.</p>
+      <span class="pilar-link">Ver el plan →</span>
+    </article>
+  </div>
+
+  <div class="franja">
+    <h3>Lo que esta app no hace</h3>
+    <p>Nunca te va a decir que un mensaje es seguro. Solo puede decirte que <b>no encontró señales</b>, que no es lo mismo. Tampoco usa inteligencia artificial de caja negra: cada veredicto muestra exactamente en qué se basó, y puedes estar en desacuerdo.</p>
+  </div>
+</section>
+
+<!-- ================= PREVENCIÓN ================= -->
+<section class="vista" data-vista="prevencion">
+  <header class="cabecera">
+    <p class="kicker">Antes del clic</p>
+    <h1>Prevención</h1>
+    <p class="lead">Reconocer las señales en frío es fácil. Hacerlo en diez segundos, con el celular en la mano y alguien apurándote, es lo difícil. Eso es lo que se entrena aquí.</p>
+  </header>
+
+  <!-- Simulacro -->
+  <div class="tarjeta tarjeta-destacada">
+    <div class="tarjeta-cab">
+      <div>
+        <p class="kicker">Lo innovador</p>
+        <h2>Simulacro de 10 segundos</h2>
+        <p class="apoyo">Ocho mensajes reales. Diez segundos cada uno. Sin tiempo para googlear, igual que en la vida real.</p>
+      </div>
+      <div class="racha" id="racha" title="Tu mejor resultado"></div>
+    </div>
+
+    <div id="sim-inicio" class="sim-panel">
+      <button type="button" class="btn btn-acento btn-grande" id="sim-empezar">Empezar simulacro</button>
+      <p class="apoyo">Tu progreso se guarda solo en este navegador.</p>
+    </div>
+
+    <div id="sim-juego" class="sim-panel" hidden>
+      <div class="sim-top">
+        <span class="sim-progreso" id="sim-progreso"></span>
+        <div class="reloj">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle class="reloj-fondo" cx="24" cy="24" r="20"/>
+            <circle class="reloj-barra" id="reloj-barra" cx="24" cy="24" r="20"/>
+          </svg>
+          <span id="reloj-num">10</span>
+        </div>
+      </div>
+      <div class="burbuja" id="sim-texto"></div>
+      <div class="sim-btns">
+        <button type="button" class="btn btn-peligro" data-sim="trampa">Es trampa</button>
+        <button type="button" class="btn btn-ok" data-sim="legitimo">Es legítimo</button>
+      </div>
+    </div>
+
+    <div id="sim-feedback" class="sim-panel" hidden>
+      <div class="feedback" id="feedback-caja">
+        <p class="feedback-titulo" id="feedback-titulo"></p>
+        <p class="feedback-senal" id="feedback-senal"></p>
+        <p id="feedback-exp"></p>
+      </div>
+      <button type="button" class="btn btn-acento btn-grande" id="sim-siguiente">Siguiente</button>
+    </div>
+
+    <div id="sim-final" class="sim-panel" hidden>
+      <div class="marcador">
+        <div><b id="sim-aciertos">0</b><span>de 8 correctas</span></div>
+        <div><b id="sim-tiempo">0s</b><span>decisión más lenta</span></div>
+      </div>
+      <p id="sim-veredicto-final" class="apoyo"></p>
+      <button type="button" class="btn btn-acento btn-grande" id="sim-reiniciar">Jugar otra vez</button>
+    </div>
+  </div>
+
+  <!-- Palabra clave -->
+  <div class="tarjeta">
+    <h2>Palabra clave familiar</h2>
+    <p class="apoyo">La estafa más difícil de detectar no trae enlaces: alguien dice ser tu mamá o tu hijo desde un número nuevo y pide plata urgente. Acuerden <b>en persona</b> una palabra que solo ustedes sepan. Si el mensaje no la trae, no es quien dice ser.</p>
+    <div class="campo-fila">
+      <input id="clave-input" type="text" maxlength="24" placeholder="Ej: tamarindo" autocomplete="off">
+      <button type="button" class="btn btn-acento" id="clave-guardar">Guardar</button>
+    </div>
+    <p class="aviso-ok" id="clave-estado" hidden></p>
+    <p class="apoyo chico">Se guarda solo en este navegador. No se envía a ningún servidor ni la vemos nosotros.</p>
+  </div>
+
+  <!-- Biblioteca de señales -->
+  <h2 class="titulo-seccion">Biblioteca de señales</h2>
+  <p class="apoyo bajo-titulo">Las seis que más aparecen. Toca una para ver el ejemplo y qué hacer.</p>
+  <div class="grid-2" id="biblioteca"></div>
+
+  <!-- Canales -->
+  <div class="tarjeta">
+    <h2>Por dónde llegan</h2>
+    <p class="apoyo">Según nuestras 70 respuestas, el anzuelo casi nunca llega por correo: llega al celular.</p>
+    <div id="canales" class="canales"></div>
+  </div>
+
+  <!-- Mitos -->
+  <h2 class="titulo-seccion">Mitos que cuestan caro</h2>
+  <div class="grid-2" id="mitos"></div>
+</section>
+
+<!-- ================= DETECCIÓN ================= -->
+<section class="vista" data-vista="deteccion">
+  <header class="cabecera">
+    <p class="kicker">En el momento</p>
+    <h1>Detección</h1>
+    <p class="lead">Pega lo que te llegó. Si el caso es ambiguo te haremos hasta dos preguntas <b>antes</b> de dar un veredicto, para no cambiarlo después.</p>
+  </header>
+
+  <div class="tarjeta" id="det-entrada">
+    <div class="segmentado" role="tablist">
+      <button type="button" class="activo" data-modo="mensaje" role="tab">Mensaje</button>
+      <button type="button" data-modo="enlace" role="tab">Solo un enlace</button>
+    </div>
+
+    <div id="campo-mensaje">
+      <label for="texto">Pega el texto del mensaje</label>
+      <textarea id="texto" rows="5" placeholder="hola hijo, cambié de número, necesito que me prestes 10k…"></textarea>
+      <label for="url">Enlace que venía en el mensaje <span class="opcional">(opcional)</span></label>
+      <input id="url" type="text" placeholder="bancolombia-seguro.co/validar" autocomplete="off">
+    </div>
+
+    <div id="campo-enlace" hidden>
+      <label for="url-solo">Pega la dirección</label>
+      <input id="url-solo" type="text" placeholder="bit.ly/dian-pago-co" autocomplete="off">
+    </div>
+
+    <button type="button" class="btn btn-acento btn-grande" id="analizar">Analizar</button>
+    <p id="error" class="error" role="alert" hidden></p>
+    <div class="ejemplos">
+      <span>Probar con:</span>
+      <button type="button" class="chip" data-ejemplo="familiar">Familiar que pide plata</button>
+      <button type="button" class="chip" data-ejemplo="banco">Alerta del banco</button>
+      <button type="button" class="chip" data-ejemplo="premio">Premio con cobro</button>
+      <button type="button" class="chip" data-ejemplo="legitimo">Mensaje normal</button>
+    </div>
+  </div>
+
+  <div class="tarjeta" id="det-preguntas" hidden aria-live="polite">
+    <p class="kicker" id="preg-progreso"></p>
+    <h2 id="pregunta"></h2>
+    <p class="apoyo">Todavía no hay veredicto. Lo damos cuando terminemos de preguntar.</p>
+    <div class="sim-btns">
+      <button type="button" class="btn btn-acento" data-respuesta="si">Sí</button>
+      <button type="button" class="btn btn-acento" data-respuesta="no">No</button>
+      <button type="button" class="btn btn-fantasma" data-respuesta="omitir">No sé</button>
+    </div>
+  </div>
+
+  <div class="tarjeta" id="det-veredicto" hidden aria-live="polite">
+    <div id="veredicto" class="veredicto"></div>
+    <p class="apoyo" id="veredicto-exp"></p>
+    <p class="aviso-ctx" id="aviso-piso" hidden></p>
+
+    <div id="recordatorio-clave" class="recordatorio" hidden></div>
+
+    <h3>El mensaje, con lo que encontramos</h3>
+    <div id="texto-resaltado" class="texto-resaltado"></div>
+
+    <h3>Señales</h3>
+    <div id="senales" class="chips"></div>
+
+    <h3>Qué hacer</h3>
+    <ul id="recomendaciones" class="lista-acciones"></ul>
+
+    <div id="modelo-caja" class="modelo" hidden>
+      <div class="modelo-cab">
+        <div>
+          <p class="kicker">Cómo lo decidió</p>
+          <h4>Similitud con el corpus</h4>
+        </div>
+        <span class="modelo-pct" id="modelo-pct">0%</span>
+      </div>
+      <p class="apoyo chico"><b>No es una probabilidad de fraude.</b> Es cuánto se parece este mensaje a los phishing que el modelo ya vio, y tiende a dar valores extremos aunque el caso sea dudoso. Es un modelo entrenable, no una caja negra: abajo están las palabras que pesaron.</p>
+
+      <div class="modelo-barra"><div class="modelo-relleno" id="modelo-barra"></div></div>
+      <p class="apoyo chico" id="modelo-confianza"></p>
+
+      <div class="chips" id="modelo-palabras"></div>
+      <p class="aviso-ctx" id="modelo-desacuerdo" hidden></p>
+
+      <p class="apoyo chico" id="modelo-estado"></p>
+      <div id="modelo-botones" class="modelo-btns">
+        <span class="apoyo chico">¿Acertó?</span>
+        <button type="button" class="chip" id="modelo-si">Sí era phishing</button>
+        <button type="button" class="chip" id="modelo-no">No, era legítimo</button>
+      </div>
+      <p class="aviso-ok chico" id="modelo-gracias" hidden></p>
+      <div class="modelo-btns">
+        <button type="button" class="enlace-boton" id="modelo-evaluar">Ver qué tan bien le va</button>
+        <button type="button" class="enlace-boton" id="modelo-borrar" hidden>Borrar lo que le enseñé</button>
+      </div>
+      <p class="apoyo chico" id="modelo-metricas" hidden></p>
+    </div>
+
+    <div class="acciones">
+      <button type="button" class="btn btn-fantasma" id="nuevo">Analizar otro</button>
+      <button type="button" class="btn btn-peligro" data-ir="mitigacion">Ya caí, ¿qué hago?</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MITIGACIÓN ================= -->
+<section class="vista" data-vista="mitigacion">
+  <header class="cabecera">
+    <p class="kicker">Después del clic</p>
+    <h1>Mitigación</h1>
+    <p class="lead">Caer no es el final. Lo que hagas en los próximos cinco minutos decide cuánto daño queda. Cuéntale al asistente qué pasó y te arma el plan para tu caso.</p>
+  </header>
+
+  <div class="tarjeta tarjeta-destacada">
+    <div class="tarjeta-cab">
+      <div>
+        <p class="kicker">Asistente guiado</p>
+        <h2>Cuéntame qué pasó</h2>
+        <p class="apoyo">Escríbelo con tus palabras. Te hago las preguntas que falten y armo el plan para tu caso.</p>
+      </div>
+      <button type="button" class="btn btn-mini btn-fantasma" id="chat-reiniciar">Empezar de nuevo</button>
+    </div>
+
+    <div class="chat" id="chat" aria-live="polite"></div>
+
+    <div class="chat-barra">
+      <input id="chat-input" type="text" placeholder="Abrí el enlace y puse mi contraseña…" autocomplete="off">
+      <button type="button" class="btn btn-acento" id="chat-enviar">Enviar</button>
+    </div>
+    <p class="apoyo chico">Funciona sin conexión y sin inteligencia artificial de caja negra: responde con reglas que puedes revisar en el código. Nada de lo que escribas sale de tu navegador.</p>
+    <button type="button" class="enlace-boton" id="ver-manual">Prefiero marcar opciones</button>
+  </div>
+
+  <div class="tarjeta" id="modo-manual" hidden>
+    <h2>¿Qué alcanzaste a hacer?</h2>
+    <p class="apoyo">Puedes marcar varias.</p>
+    <div class="chips" id="acciones-lista"></div>
+    <button type="button" class="btn btn-acento btn-grande" id="armar-plan">Armar mi plan</button>
+  </div>
+
+  <div id="plan-zona" hidden>
+    <div class="tarjeta tarjeta-urgente">
+      <div class="tarjeta-cab">
+        <div>
+          <p class="kicker">Tu plan</p>
+          <h2 id="plan-titulo">Primeros 5 minutos</h2>
+        </div>
+        <div class="crono">
+          <span id="crono-num">5:00</span>
+          <button type="button" class="btn btn-mini" id="crono-btn">Iniciar</button>
+        </div>
+      </div>
+      <div id="plan-avisos" hidden></div>
+      <ol class="pasos" id="pasos"></ol>
+      <p class="progreso" id="progreso"></p>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Aviso para tu círculo</h2>
+      <p class="apoyo">Si entraron a tu cuenta, el siguiente objetivo son tus contactos. Copia esto y mándalo a tus grupos.</p>
+      <div class="bloque-copiar">
+        <p id="mensaje-aviso"></p>
+        <button type="button" class="btn btn-acento" id="copiar">Copiar</button>
+      </div>
+    </div>
+
+    <div class="tarjeta tarjeta-no">
+      <h2>Lo que no debes hacer</h2>
+      <ul class="lista-no" id="no-hacer"></ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <p><b>Anzuelo Cero</b> · Hackathon «No Muerdas el Anzuelo» · IEEE CS, Universidad de La Sabana</p>
+  <p class="chico">Todo ocurre en tu navegador: no hay servidor y nada se envía a ningún lado. El análisis no guarda el texto que pegas; solo los mensajes que tú marcas para corregir al modelo quedan guardados, y únicamente en este navegador.</p>
+</footer>
+
+<nav class="tabs" aria-label="Secciones">
+  <button type="button" data-ir="inicio" class="activo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1Z"/></svg><span>Inicio</span>
+  </button>
+  <button type="button" data-ir="prevencion">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Antes</span>
+  </button>
+  <button type="button" data-ir="deteccion">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Durante</span>
+  </button>
+  <button type="button" data-ir="mitigacion">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="m5.6 5.6 3.9 3.9M14.5 14.5l3.9 3.9M18.4 5.6l-3.9 3.9M9.5 14.5l-3.9 3.9"/></svg><span>Después</span>
+  </button>
+</nav>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de prueba - Anzuelo Cero</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <main class="contenedor">
+    <header>
+      <h1>Registro de prueba</h1>
+      <p class="sub">Uso interno del equipo. Los datos quedan en este navegador. Exporta el CSV al terminar cada sesión.</p>
+    </header>
+
+    <section class="tarjeta">
+      <p id="conteo">Cargando registro…</p>
+      <div class="botones">
+        <button id="exportar" type="button" class="principal">Exportar CSV</button>
+        <button id="borrar" type="button" class="secundario">Borrar registro</button>
+      </div>
+      <div class="tabla-contenedor">
+        <table id="tabla">
+          <thead>
+            <tr><th>Fecha</th><th>Señales</th><th>Respuestas</th><th>Puntaje</th><th>Veredicto</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script type="module">
+    import { leerRegistro, borrarRegistro, registroACsv } from "./js/registro.js";
+
+    const filas = leerRegistro();
+    document.getElementById("conteo").textContent = `${filas.length} análisis registrados en este navegador.`;
+
+    const cuerpo = document.querySelector("#tabla tbody");
+    for (const f of filas) {
+      const tr = document.createElement("tr");
+      for (const v of [f.fecha, f.senales, f.respuestas, f.puntaje, f.veredicto]) {
+        const td = document.createElement("td");
+        td.textContent = v ?? "";
+        tr.appendChild(td);
+      }
+      cuerpo.appendChild(tr);
+    }
+
+    document.getElementById("exportar").addEventListener("click", () => {
+      const blob = new Blob([registroACsv(leerRegistro())], { type: "text/csv;charset=utf-8" });
+      const enlace = document.createElement("a");
+      enlace.href = URL.createObjectURL(blob);
+      enlace.download = "registro_anzuelo_cero.csv";
+      enlace.click();
+      URL.revokeObjectURL(enlace.href);
+    });
+
+    document.getElementById("borrar").addEventListener("click", () => {
+      if (confirm("¿Borrar todo el registro de este navegador? Exporta el CSV antes.")) {
+        borrarRegistro();
+        location.reload();
+      }
+    });
+  </script>
+</body>
+</html>

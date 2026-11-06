@@ -1,0 +1,9 @@
+{
+  "name": "anzuelo-cero",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/motor.test.js tests/modelo.test.js tests/auditoria-adversaria.test.js tests/decision.test.js"
+  }
+}
